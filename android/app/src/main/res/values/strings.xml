@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">quiz-app</string>
+    <string name="title_activity_main">quiz-app</string>
+    <string name="package_name">raedrim.quizapp</string>
+    <string name="custom_url_scheme">raedrim.quizapp</string>
+</resources>
