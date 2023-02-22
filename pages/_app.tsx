@@ -1,6 +1,22 @@
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
+import nookies from 'nookies';
 import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+
+function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
+  useEffect(() => {
+    const cookies = nookies.get();
+    const token = cookies['your-cookie-name'];
+
+    if (!token && router.pathname !== '/login') {
+      router.push('/login');
+    }
+  }, []);
+
+  return <Component {...pageProps} />;
 }
+
+export default MyApp;
