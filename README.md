@@ -2,7 +2,7 @@
 
 This is a web-based quiz application built using Next.js and ASP.NET.
 
-## Features
+## Features when development finishes
 
 - Real-time multiplayer where each person answers the question from their phones.
 - A scoring system
